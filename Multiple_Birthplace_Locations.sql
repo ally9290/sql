@@ -1,4 +1,5 @@
-/* Birthplace comment and spbpers birthplace */
+--SQL query to find records with mismatched birthplace locations
+--Birthplace comment and spbpers birthplace
 SELECT spriden_pidm,
   spriden_id,
   trim( spriden_first_name
@@ -31,8 +32,8 @@ WHERE (spbpers_city_birth    IS NOT NULL
   AND spriden_change_ind     IS NULL;
 
 
-
-/* Multiple Birthplace comments */
+--SQL query to find records with birthplace comments that have been entered more than once
+--Multiple Birthplace comments
 SELECT spriden_pidm,
   spriden_id,
   trim( spriden_first_name
