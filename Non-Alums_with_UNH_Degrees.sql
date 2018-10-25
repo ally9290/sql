@@ -1,4 +1,4 @@
---Non-Alums with UNH Degrees
+--SQL query to identify records that contain UNH degree information but are not coded as an alum
 select t.spriden_pidm,
        t.spriden_id,
        s.spbpers_name_prefix,
