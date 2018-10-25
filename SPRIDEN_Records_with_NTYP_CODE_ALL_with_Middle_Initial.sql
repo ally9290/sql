@@ -1,3 +1,4 @@
+--SQL query to identify names with middle initials where they should be full names
 --Full Middle Name population for NTYP_CODE = 'ALL'
 select spr.spriden_id as SPRIDEN1,
        spr.spriden_pidm as PIDM1,
@@ -35,7 +36,6 @@ select spr.spriden_id as SPRIDEN1,
    and substr(spr.spriden_mi,0,1) = substr(sub.spriden_mi,0,1)
    and(spr.spriden_mi like ('_') or spr.spriden_mi like ('_.'))
    and spr.spriden_last_name <> sub.spriden_mi 
-   --and spr.spriden_first_name = sub.spriden_first_name
  group by spr.spriden_id,
        spr.spriden_pidm,
        spb.spbpers_name_prefix,
