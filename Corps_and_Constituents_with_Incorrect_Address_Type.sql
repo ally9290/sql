@@ -1,3 +1,4 @@
+--SQL query to identify records that have an incorrect address type
 SELECT a.spriden_id as "Banner ID",
        a.spriden_first_name||' '||a.spriden_last_name as "Name",      
        a.spriden_entity_ind as "Entity Indicator",
