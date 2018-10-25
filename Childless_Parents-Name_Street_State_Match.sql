@@ -1,5 +1,5 @@
+--SQL query to identify parent records that are not currently linked to a child/student record, but a child/student record exists in the database
 --Childless Parents with first name, last name, state, and street match
-
 WITH addr as (
         select sor.sorfolk_pidm,
         cs.spriden_id as child_id,
