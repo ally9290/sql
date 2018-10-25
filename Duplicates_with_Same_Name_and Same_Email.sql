@@ -1,3 +1,4 @@
+--SQL query to identify records that have a match on name and email address
 --Duplicate Records with Same Name and Same Email Address
 select t.spriden_pidm,
        t.spriden_id,
