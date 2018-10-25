@@ -1,3 +1,4 @@
+--SQL query to find records with a preferred class year that does not match their actual class year
 SELECT spriden_pidm,
   spriden_id,
   trim(spriden_first_name
