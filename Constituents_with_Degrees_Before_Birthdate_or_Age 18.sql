@@ -1,4 +1,4 @@
---Individuals with Degrees Before Birth Date or Before Age 18
+--SQL query to find constituents that have degrees before their birth date or before age 18
 select t.spriden_pidm,
        t.spriden_id,
        s.spbpers_name_prefix,
